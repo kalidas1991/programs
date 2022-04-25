@@ -21,4 +21,16 @@ public class PrimeNumber {
 		}
 		return true;
 	}
+		public static boolean checkPrime(int n){
+		//edge case
+		if(n<=1) {
+			return false;
+		}
+		//2 is the only even prime number
+		for (int i = 2; i <Math.sqrt(n) ; i++) {
+			if(n%i==0)
+				retrun false;
+		}
+		return true;
+	}
 }

@@ -18,4 +18,16 @@ public class ReverseString {
 		}
 		return new String(ar);
 	}
+
+	public static String reverseAString(String s){
+		char c[] = s.toCharArray();
+		char temp;
+		for (int i = 0; i <c.length/2 ; i++) {
+
+			temp=c[i];
+			c[i]=c[c.length-1-i];
+			c[c.length-1-i] = temp;
+		}
+		return new String(c);
+	}
 }

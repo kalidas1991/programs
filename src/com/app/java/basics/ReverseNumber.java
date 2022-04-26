@@ -19,4 +19,19 @@ public class ReverseNumber {
 		return reverse;
 	}
 
+	public static long  reverseANumber(long number){
+
+		if(number<0){
+			return 0;
+		}
+		int rem=0;
+		long result=0;
+		while(number>0){
+			long n = number%10;
+			result=result*10+n;
+			number/=10;
+		}
+		return result;
+	}
+
 }

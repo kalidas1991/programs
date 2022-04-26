@@ -29,8 +29,9 @@ public class PrimeNumber {
 		//2 is the only even prime number
 		for (int i = 2; i <Math.sqrt(n) ; i++) {
 			if(n%i==0)
-				retrun false;
+				return false;
 		}
+		//return success
 		return true;
 	}
 }
